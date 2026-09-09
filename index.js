@@ -17,6 +17,8 @@ function resetAll() {
 }
 function atHouse() {
   alert("Bestellung für vor Ort abgeschlossen: Gesamtbetrag " + count + "€");
+
+  resetAll();
 }
 const minDelivery = 20;
 const driveDelivery = 2.5;
@@ -33,5 +35,6 @@ function deliveryOne() {
         (count + driveDelivery) +
         "€",
     );
+    resetAll();
   }
 }
