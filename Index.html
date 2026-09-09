@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Preisrechner</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="hero">
+        <div class="hero-left">
+          <h1 class="title">Preisrechner</h1>
+          <div class="eat buttons">
+            <div class="foods">
+              <button onclick="addSomething('Kaffee ', 3.5)">
+                Kaffee <br />
+                <span class="color">3,50 €</span>
+              </button>
+              <button onclick="addSomething('Tee ', 2.5)">
+                Tee <br />
+                <span class="color">2,50 €</span>
+              </button>
+              <button onclick="addSomething('Apfelschorle ', 4.0)">
+                Apfelschorle <br />
+                <span class="color">4,00 €</span>
+              </button>
+              <button onclick="addSomething('Wasser ', 2.0)">
+                Wasser <br />
+                <span class="color">2,00 €</span>
+              </button>
+            </div>
+            <div class="foods">
+              <button onclick="addSomething('Bratwurst ', 5.5)">
+                Bratwurst <br /><span class="color">5,50 €</span>
+              </button>
+              <button onclick="addSomething('Schnitzel ', 12.5)">
+                Schnitzel <br /><span class="color">12,50 €</span>
+              </button>
+              <button onclick="addSomething('Currywurst ', 6.0)">
+                Currywurst <br /><span class="color">6,00 €</span>
+              </button>
+              <button onclick="addSomething('Brezel ', 4.5)">
+                Brezel <br /><span class="color">4,50 €</span>
+              </button>
+            </div>
+            <div class="foods">
+              <button onclick="addSomething('Käsespätzle ', 8.0)">
+                Käsespätzle <br /><span class="color">8,00 €</span>
+              </button>
+              <button onclick="addSomething('Pommes ', 3.5)">
+                Pommes <br /><span class="color">3,50 €</span>
+              </button>
+              <button onclick="addSomething('Apfelstrudel ', 4.5)">
+                Apfelstrudel <br /><span class="color">4,50 €</span>
+              </button>
+              <button onclick="addSomething('Berliner ', 3.0)">
+                Berliner <br /><span class="color">3,00 €</span>
+              </button>
+            </div>
+            <div class="foods">
+              <button onclick="addSomething('Schwarzwälder ', 5.0)">
+                Schwarzwälder <br /><span class="color">5,00 €</span>
+              </button>
+              <button onclick="addSomething('Brötchen ', 2.5)">
+                Brötchen <br /><span class="color">2,50 €</span>
+              </button>
+              <button onclick="addSomething('Leberkäse ', 7.0)">
+                Leberkäse <br /><span class="color">7,00 €</span>
+              </button>
+              <button onclick="addSomething('Kartoffelsalatpefekt ', 6.5)">
+                Kartoffelsalat <br /><span class="color">6,50 €</span>
+              </button>
+            </div>
+          </div>
+          <div class="checkout">
+            <hr />
+            <h3 class="totale">Gesamt<span id="total">0,00 €</span></h3>
+            <button class="longbutton" onclick="resetAll()">
+              Zurücksetzen
+            </button>
+            <div class="underbuttons">
+              <button class="local" onclick="atHouse()">vor Ort</button>
+              <button class="delivery" onclick="deliveryOne()">
+                Lieferung
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="order-container">
+          <h2 class="title-order">Bestellung</h2>
+          <span id="order"></span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
