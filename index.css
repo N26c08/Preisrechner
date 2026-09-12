@@ -21,7 +21,7 @@
   align-items: stretch;
   justify-content: center;
   width: 90vw;
-  height: 90vh;
+  min-height: 90vh;
   gap: 2vw;
 }
 .hero-left,
