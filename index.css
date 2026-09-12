@@ -38,8 +38,7 @@
   overflow: auto;
 }
 hr {
-  width: 39rem;
-  max-width: 100%;
+  width: 100%;
   margin: 2rem 0;
   opacity: 0.4;
 }
@@ -47,13 +46,14 @@ hr {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
-  width: 39rem;
+  width: 100%;
 }
 button {
   font-family: inherit;
 }
 .buttons button {
-  width: 9rem;
+  flex: 1;
+  min-width: 0;
   height: 4.5rem;
   border-radius: 10px;
   border-style: none;
@@ -76,12 +76,12 @@ button {
 .checkout {
   display: flex;
   flex-direction: column;
-  width: 39rem;
+  width: 100%;
 }
 .totale {
   display: flex;
   justify-content: space-between;
-  width: 39rem;
+  width: 100%;
 }
 #total {
   color: var(--primary-color);
@@ -97,7 +97,7 @@ button {
 }
 .longbutton {
   margin-top: 2rem;
-  width: 39rem;
+  width: 100%;
   background-color: red;
   color: var(--card-color);
 }
@@ -112,7 +112,7 @@ button {
   gap: 1rem;
 }
 .underbuttons button {
-  width: 19rem;
+  flex: 1;
 }
 .local {
   background-color: rgb(21, 186, 21);
