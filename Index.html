@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Preisrechner</title>
     <link rel="stylesheet" href="index.css" />
-    <script src="index.js"></script>
+    <script src="index.js" defer></script>
   </head>
   <body>
     <div class="main">
       <div class="hero">
         <div class="hero-left">
-          <h1 class="title">Preisrechner</h1>
-          <div class="food buttons">
+          <h1>Preisrechner</h1>
+          <div class="food-list buttons">
             <div class="foods">
               <button onclick="addSomething('Kaffee ', 3.5)">
                 Kaffee <br />
@@ -69,7 +69,7 @@
               <button onclick="addSomething('Leberkäse ', 7.0)">
                 Leberkäse <br /><span class="color">7,00 €</span>
               </button>
-              <button onclick="addSomething('Kartoffelsalatpefekt ', 6.5)">
+              <button onclick="addSomething('Kartoffelsalat ', 6.5)">
                 Kartoffelsalat <br /><span class="color">6,50 €</span>
               </button>
             </div>
@@ -90,7 +90,7 @@
         </div>
         <div class="order-container">
           <h2 class="title-order">Bestellung</h2>
-          <span id="order"></span>
+          <div id="order"></div>
         </div>
       </div>
     </div>

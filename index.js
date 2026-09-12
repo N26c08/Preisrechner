@@ -1,38 +1,38 @@
 let count = 0;
+const minDelivery = 20;
+const deliveryFee = 2.5;
+let order = document.getElementById("order");
 function addSomething(name, number) {
   count += number;
   console.log("Gesamtbetrag: " + count + "€");
-  let element = document.getElementById("total");
-  element.innerHTML = count + " €";
-  let order = document.getElementById("order");
+  updateTotal();
   order.innerHTML +=
     name + ": " + number + " €" + "<br>" + "<hr class='order-line'>";
 }
-function resetAll() {
-  count = 0;
+function updateTotal() {
   let element = document.getElementById("total");
   element.innerHTML = count + " €";
-  let order = document.getElementById("order");
+}
+function resetAll() {
+  count = 0;
+  updateTotal();
   order.innerHTML = "";
 }
 function atHouse() {
   alert("Bestellung für vor Ort abgeschlossen: Gesamtbetrag " + count + "€");
-
   resetAll();
 }
-const minDelivery = 20;
-const driveDelivery = 2.5;
 function deliveryOne() {
-  if (count < minDelivery)
+  if (count < minDelivery) {
     alert(
       "Der Mindestbestellwert muss bei 20€ liegen. Aktueller Betrag " +
         count +
         "€",
     );
-  else {
+  } else {
     alert(
       "Bestellung für Lieferung abgeschlossen! Gesamtbetrag " +
-        (count + driveDelivery) +
+        (count + deliveryFee) +
         "€",
     );
     resetAll();
