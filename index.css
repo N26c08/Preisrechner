@@ -18,7 +18,7 @@
 }
 .hero {
   display: flex;
-  align-items: flex-start;
+  align-items: stretch;
   justify-content: center;
   width: 90vw;
   height: 90vh;
@@ -28,9 +28,7 @@
 .order-container {
   background-color: var(--card-color);
   border-radius: 10px;
-  height: 90vh;
-  padding-top: 2rem;
-  padding-left: 2rem;
+  padding: 2rem;
 }
 .hero-left {
   width: 50vw;
