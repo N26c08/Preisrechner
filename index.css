@@ -14,8 +14,6 @@
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  height: auto;
-  padding: 5vh 0;
   font-family: "Montserrat Alternates", sans-serif;
 }
 .hero {
@@ -23,8 +21,7 @@
   align-items: stretch;
   justify-content: center;
   width: 90vw;
-  height: 90vh;
-  max-height: 44rem;
+  height: 42rem;
   gap: 2vw;
 }
 .hero-left,
