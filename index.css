@@ -23,7 +23,8 @@
   align-items: stretch;
   justify-content: center;
   width: 90vw;
-  min-height: 90vh;
+  height: 90vh;
+  max-height: 44rem;
   gap: 2vw;
 }
 .hero-left,
@@ -37,7 +38,7 @@
 }
 .order-container {
   width: 18vw;
-  overflow: auto;
+  overflow-y: auto;
 }
 hr {
   width: 100%;
